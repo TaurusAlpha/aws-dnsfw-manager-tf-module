@@ -4,7 +4,7 @@ terraform {
       source = "hashicorp/aws"
       configuration_aliases = [
         aws.root,
-        aws.inspection,
+        aws.delegated_fms_admin_acc,
       ]
     }
   }

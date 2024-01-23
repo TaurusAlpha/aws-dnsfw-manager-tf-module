@@ -6,10 +6,15 @@ variable "root_acc" {
   type = string
 }
 
-variable "inspection_acc" {
+variable "delegated_fms_admin_acc" {
   type = string
 }
 
 variable "tf_role" {
   type = string
+}
+
+variable "domain_blacklist" {
+  type    = set(string)
+  default = ["example.com", "*.example.com"]
 }

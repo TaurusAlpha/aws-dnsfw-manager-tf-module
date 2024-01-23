@@ -13,5 +13,5 @@
 # }
 
 output "org_id" {
-  value = data.aws_organizations_organization.aws_org.id
+  value = data.aws_organizations_organization.aws_org.roots[0].id
 }

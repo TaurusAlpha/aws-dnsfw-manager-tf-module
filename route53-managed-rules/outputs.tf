@@ -9,3 +9,7 @@ output "rslvr_botnet_id" {
 output "rslvr_threat_id" {
   value = data.external.get_managed_threat_rslvr_id.result["id"]
 }
+
+output "rslvr_guardduty_id" {
+  value = data.external.get_managed_guardduty_rslvr_id.result["id"]
+}

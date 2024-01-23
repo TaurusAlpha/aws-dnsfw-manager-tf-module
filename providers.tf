@@ -10,6 +10,6 @@ provider "aws" {
   alias  = "assume-inspection"
   region = var.home_region
   assume_role {
-    role_arn = "arn:aws:iam::${var.inspection_acc}:role/${var.tf_role}"
+    role_arn = "arn:aws:iam::${var.delegated_fms_admin_acc}:role/${var.tf_role}"
   }
 }
